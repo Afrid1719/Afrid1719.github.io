@@ -3,13 +3,14 @@
 }
 
 body{
+    box-sizing:content-box;
     margin:0;
     padding:0;
     background-image:url('https://lh3.ggpht.com/eKJNS2Pj-b5obfpU96n8diVSUVxiJ70Wx529FPkBtaGLJj6kJ7CWLkur8dJ_t8rm6w=w720-h310');
     background-attachment:fixed;
     background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
+    background-position:center top;
+    background-size:100vw 100vh;
 }
 
 .main-container{
