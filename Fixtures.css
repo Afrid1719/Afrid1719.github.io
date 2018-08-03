@@ -1,0 +1,68 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:2vw;
+}
+
+.main-container{
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+.r32-container,.r16-container,.rq-container,.sf-container,.final-container{
+    display:flex;
+    padding:5vw;
+    flex-direction:column;
+    background-color:#009933;
+    width:40vw;
+    justify-content:space-around;
+}
+
+
+.name{
+    font-family:"Comic Sans MS";
+    font-size:3vw;
+}
+
+.ID{
+    font-family:'Abel';
+    font-size:2vw;
+}
+
+.round{
+    width:30vw;
+    padding:0;
+    margin:5% 0;
+}
+
+.one{
+	border-radius:20px 20px 0 0;
+}
+
+.two{
+	border-radius:0 0 20px 20px;
+}
+.pl{
+    width:100%;
+    background-color: #ffe066;
+    height:auto;
+    text-align:center;
+    padding:1vw;
+}
+
+.sf1 > .pl, .sf2 > .pl{
+    height:20vw;
+}
+
+.vs{
+    width:100%;
+    background-color:#00ffcc;
+    height:auto;
+    color:#ff1a1a;
+    text-align:center;
+    font-weight:bold;
+    font-size:5vw;
+}
