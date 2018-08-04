@@ -6,11 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-		<link href="Fixtures.css" rel="stylesheet">
-		<script src="Fixtures.js"></script> 
+		<!--<link href="https://github.com/Afrid1719/Afrid1719.github.io/blob/master/Fixtures.css" rel="stylesheet">
+		<script src="https://github.com/Afrid1719/Afrid1719.github.io/blob/master/Fixtures.js"></script> -->
     </head>
     <body>
-        <div class="main-container">
+        <div class="main-container" id="main-container">
             <div class="r32-container"> <!--Round of 32 1 to 16-->
                 
                 <!--Fixture box-->
@@ -525,7 +525,8 @@
         </div>
         
         <div id="video-frame" >
-           <iframe id="vid" width="100%" height="100%" frameborder="2px" allow="autoplay; encrypted-media" allowfullscreen style="display:none"></iframe>
+           <iframe id="vid" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:none"></iframe>
+           <span id="close" onclick="close_frame()">&#10006</span>
         </div>
     </body>
 </html>
