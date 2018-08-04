@@ -14,7 +14,7 @@ body{
 header{
     background:#3385ff;
     padding:2%;
-    width:100%;
+    width:280%;
 }
 
 h2{
@@ -111,15 +111,18 @@ h2{
 footer{
     background:#99ff33;
     color:#666699;
-    padding:2%;
-    width:100%;
+    padding:0;
+    width:280%;
 }
 
 .organised{
     float:right;
 }
 footer::after{
-    content:"";
+    content:"Any bug encountered or error report or suggestions,do mail at aliatif908@gmail.com.";
+    font-size:10px;
+    font-style:italic;
+    color:black;
     clear:both;
     display:table;
 }
