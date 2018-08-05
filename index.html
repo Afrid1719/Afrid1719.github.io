@@ -9,7 +9,7 @@
 		<link href="/Fixtures.css" rel="stylesheet">
 		<script src="/Fixtures.js"></script>
     </head>
-    <body>
+     <body>
         <header>
             <h2>8 Ball Pool Tounament</h2>
         </header>
@@ -17,7 +17,7 @@
             <div class="r32-container"> <!--Round of 32 1 to 16-->
                 
                 <!--Fixture box-->
-                <div class="round r-one" onclick="show_video()">
+                <div class="round r-one" onclick="show_video('r1')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -32,7 +32,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                <div class="round r-two">
+                <div class="round r-two" onclick="show_video('r2')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -47,7 +47,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                <div class="round r-three">
+                <div class="round r-three" onclick="show_video('r3')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -62,23 +62,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                <div class="round r-four">
-                    <div class="pl one">
-                        <span class="name">Name:</span>
-                        <br/>
-                        <span class="ID">UID:</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Name:</span>
-                        <br/>
-                        <span class="ID">UID:</span>
-                    </div>
-                </div>
-                
-                <div class="round r-five">
+                <div class="round r-four" onclick="show_video('r4')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -94,7 +78,7 @@
                     </div>
                 </div>
                 
-                <div class="round r-six">
+                <div class="round r-five" onclick="show_video('r5')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -110,7 +94,7 @@
                     </div>
                 </div>
                 
-                <div class="round r-seven">
+                <div class="round r-six" onclick="show_video('r6')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -126,7 +110,23 @@
                     </div>
                 </div>
                 
-                <div class="round r-eight">
+                <div class="round r-seven" onclick="show_video('r7')">
+                    <div class="pl one">
+                        <span class="name">Name:</span>
+                        <br/>
+                        <span class="ID">UID:</span>
+                    </div>
+                    <div class="vs">
+                        VS
+                    </div>
+                    <div class="pl two">
+                        <span class="name">Name:</span>
+                        <br/>
+                        <span class="ID">UID:</span>
+                    </div>
+                </div>
+                
+                <div class="round r-eight" onclick="show_video('r8')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -144,7 +144,7 @@
             </div>
         
             <div class="r16-container"> <!--Pre-Quarter Final 1 to 4-->
-                <div class="round pq1">
+                <div class="round pq1" onclick="show_video('pq1')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq2">
+                <div class="round pq2" onclick="show_video('pq2')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq3">
+                <div class="round pq3" onclick="show_video('pq3')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -192,7 +192,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq4">
+                <div class="round pq4" onclick="show_video('pq4')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -210,7 +210,7 @@
             </div>
             
             <div class="rq-container"> <!--Quater Finals 1 & 2-->
-                <div class="round q1">
+                <div class="round q1" onclick="show_video('q1')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -226,7 +226,7 @@
                     </div>
                  </div>
                  
-                 <div class="round q2">
+                 <div class="round q2" onclick="show_video('q2')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -244,7 +244,7 @@
             </div>
             
             <div class="sf-container"> <!--Semi Final 1-->
-                <div class="round sf1">
+                <div class="round sf1" onclick="show_video('sf1')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -262,7 +262,7 @@
             </div>
             
            <div class="final-container"> <!--Final-->
-                <div class="round final">
+                <div class="round final" onclick="show_video('final')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -280,7 +280,7 @@
             </div>
         
             <div class="sf-container"> <!--Semi Final 2-->
-                <div class="round sf2">
+                <div class="round sf2" onclick="show_video('sf2')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -298,7 +298,7 @@
             </div>
             
             <div class="rq-container"> <!--Quater Finals 3 & 4-->
-                <div class="round q3">
+                <div class="round q3" onclick="show_video('q3')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -314,7 +314,7 @@
                     </div>
                  </div>
                  
-                 <div class="round q4">
+                 <div class="round q4" onclick="show_video('q4')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -332,7 +332,7 @@
             </div>
             
             <div class="r16-container"> <!--Pre-Quarter Final 5 to 8-->
-                <div class="round pq5">
+                <div class="round pq5" onclick="show_video('pq5')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -348,7 +348,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq6">
+                <div class="round pq6" onclick="show_video('pq6')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -364,7 +364,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq7">
+                <div class="round pq7" onclick="show_video('pq7')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -380,7 +380,7 @@
                     </div>
                 </div>
                 
-                <div class="round pq8">
+                <div class="round pq8" onclick="show_video('pq8')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -400,7 +400,7 @@
             <div class="r32-container"> <!--Round of 32 1 to 16-->
                 
                 <!--Fixture box-->
-                <div class="round r-nine">
+                <div class="round r-nine" onclick="show_video('r9')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -415,22 +415,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                <div class="round r-ten">
-                    <div class="pl one">
-                        <span class="name">Name:</span>
-                        <br/>
-                        <span class="ID">UID:</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl r-two">
-                        <span class="name">Name:</span>
-                        <br/>
-                        <span class="ID">UID:</span>
-                    </div>
-                </div>
-                <div class="round r-eleven">
+                <div class="round r-ten" onclick="show_video('r10')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -445,7 +430,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                <div class="round r-twelve">
+                <div class="round r-eleven" onclick="show_video('r11')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -460,8 +445,7 @@
                         <span class="ID">UID:</span>
                     </div>
                 </div>
-                
-                <div class="round r-thirteen">
+                <div class="round r-twelve" onclick="show_video('r12')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -477,7 +461,7 @@
                     </div>
                 </div>
                 
-                <div class="round r-fourteen">
+                <div class="round r-thirteen" onclick="show_video('r13')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -493,7 +477,7 @@
                     </div>
                 </div>
                 
-                <div class="round r-fifteen">
+                <div class="round r-fourteen" onclick="show_video('r14')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -509,7 +493,23 @@
                     </div>
                 </div>
                 
-                <div class="round r-sixteen">
+                <div class="round r-fifteen" onclick="show_video('r15')">
+                    <div class="pl one">
+                        <span class="name">Name:</span>
+                        <br/>
+                        <span class="ID">UID:</span>
+                    </div>
+                    <div class="vs">
+                        VS
+                    </div>
+                    <div class="pl two">
+                        <span class="name">Name:</span>
+                        <br/>
+                        <span class="ID">UID:</span>
+                    </div>
+                </div>
+                
+                <div class="round r-sixteen" onclick="show_video('r16')">
                     <div class="pl one">
                         <span class="name">Name:</span>
                         <br/>
@@ -538,7 +538,7 @@
                     <a href="" target="_self">Facbook Page</a>
                     <br/>
                     <a id="tel" href="tel:8335003838">8335003838</a>
-                    <span class="organised">-Organised By Pool Adda</span>
+                    <span class="organised">Organised By Pool Adda</span>
                 </h4>    
             </div>
         </footer>
