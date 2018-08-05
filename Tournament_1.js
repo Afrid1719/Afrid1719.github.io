@@ -1,6 +1,6 @@
 /*It will contain the source of the videos with match number*/
 var vid_pair={
-                r1:"",
+                r1:"https://www.youtube.com/embed/JbRQYf1oLbE?ecver=2",
                 r2:"",
                 r3:"",
                 r4:"",
@@ -31,10 +31,11 @@ var vid_pair={
                 sf1:"",
                 sf2:"",
                 final:"",
+                third:"",
 };
 
 function show_video(id){
-    var source="";
+    var source=""; //source for the video
     var c;
     for(c in vid_pair)
     {
@@ -54,9 +55,8 @@ function show_video(id){
         frame.style.display="block";
         frame.style.width="100%";
         frame.style.height="60%";
-        var vid_src=""; //source for the video
         document.getElementById('vid').style.display="block";
-        document.getElementById('vid').src=vid_src; //it will add the source 
+        document.getElementById('vid').src=source; //it will add the source 
         document.getElementById("main-container").style.opacity="0.45";
     }
 
