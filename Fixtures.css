@@ -22,6 +22,7 @@ h2{
     color:#ff0066;
     padding:0;
     margin:0;
+	font-size:10vw;
 }
 .main-container{
     display:flex;
@@ -120,7 +121,7 @@ footer{
 }
 footer::after{
     content:"Any bug or error report or suggestions,mail us at pooladda2k18@gmail.com.";
-    font-size:10px;
+    font-size:3vw;
     font-style:italic;
     color:black;
     clear:both;
