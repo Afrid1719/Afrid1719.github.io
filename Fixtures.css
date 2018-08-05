@@ -114,6 +114,7 @@ footer{
     color:#666699;
     padding:0;
     width:280%;
+    font-size:3vw;
 }
 
 .organised{
@@ -121,7 +122,7 @@ footer{
 }
 footer::after{
     content:"Any bug or error report or suggestions,mail us at pooladda2k18@gmail.com.";
-    font-size:3vw;
+    font-size:2vw;
     font-style:italic;
     color:black;
     clear:both;

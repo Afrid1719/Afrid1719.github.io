@@ -1,9 +1,9 @@
 /*It will contain the source of the videos with match number*/
 var vid_pair={
-                r1:"abc.com",
-                r2:"bcd.com",
-                r3:"cde.com",
-                r4:"def.com",
+                r1:"",
+                r2:"",
+                r3:"",
+                r4:"",
                 r5:"",
                 r6:"",
                 r7:"",
@@ -44,14 +44,21 @@ function show_video(id){
             break;
         }
     }
-    var frame=document.getElementById("video-frame");
-    frame.style.display="block";
-    frame.style.width="100%";
-    frame.style.height="60%";
-    var vid_src="https://www.youtube.com/embed/cqnotjll3mg"; //source for the video
-    document.getElementById('vid').style.display="block";
-    document.getElementById('vid').src=vid_src; //it will add the source 
-    document.getElementById("main-container").style.opacity="0.45";
+    if(source==="")
+    {
+        alert("Sorry,no video uploaded for this match");
+    }
+    else
+    {
+        var frame=document.getElementById("video-frame");
+        frame.style.display="block";
+        frame.style.width="100%";
+        frame.style.height="60%";
+        var vid_src=""; //source for the video
+        document.getElementById('vid').style.display="block";
+        document.getElementById('vid').src=vid_src; //it will add the source 
+        document.getElementById("main-container").style.opacity="0.45";
+    }
 
 }
 
