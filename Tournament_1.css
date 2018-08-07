@@ -97,15 +97,14 @@ h2{
 }
 
 .medal{
-    display:block;
+    display:inline-block;
     margin:0;
     padding:0;
     border-radius:50%;
-    position:absolute;
     border:1px solid transparent;
-    width:5%;
+    width:15%;
     height:4%;
-    left:127%;
+    /*left:127%;*/
 }
 
 .gold{
@@ -113,28 +112,28 @@ h2{
     background:#ffd700;
     box-shadow:0 0 3px #fff099;
     color:#ccad00;
-    top:79%;
+    /*top:79%;*/
 }
 
 .silver{
     background:#c0c0c0;
     color:#666666;
     box-shadow:0 0 3px #d9d9d9;
-    top:90%;
+    /*top:90%;*/
 }
 
 .bronze{
     background:#e69900;
     color:#996600;
     box-shadow:0 0 3px #ffc34d;
-    top:126%;
+    /*top:126%;*/
 }
 
 .green{
     background:#1aff1a;
     color:#008000;
     box-shadow:0 0 3px #99ff99;
-    top:139%;
+    /*top:139%;*/
 }
 
 #video-frame{
