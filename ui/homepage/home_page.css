@@ -3,8 +3,8 @@
 }
 
 html{
+    font-size:3vw;
     background:#ffff80;
-	font-size:150%;
 }
 
 [class*="col-"]{
@@ -64,7 +64,7 @@ h2{
 header{
     font-family:"Trebuchet MS";
     cursor:pointer;
-    font-size:230%;
+    font-size:300%;
     background:#6666ff;
 }
 
@@ -89,13 +89,13 @@ article,.tournament-info,.tour,.Contact{
 }
 
 .tournament-info{
-    /*font-size:100%;*/
+    font-size:100%;
     width:31.333%;
     background:#80ff80;
 }
 
 .info{
-    font-size:120%;
+    font-size:60%;
     text-decoration:underline;
     text-align:center;
     cursor:pointer;
