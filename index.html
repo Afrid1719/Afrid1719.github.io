@@ -1,575 +1,84 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>8 Ball Pool Tournament</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=0.5"/>
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-		<link href="/Tournament_1.css" rel="stylesheet">
-		<script src="/Tournament_1.js"></script> 
-    </head>
-    <body>
-        <header>
-            <h2>8 Ball Pool Tounament</h2>
-        </header>
-        <script>
-            window.onload=function(){
-                alert('To view any match video click on that match! :)')
-            }
-        </script>
-        <div class="main-container" id="main-container">
-            <div class="r32-container"> <!--Round of 32 1 to 16-->
-                
-                <!--Fixture box-->
-                <div class="round r-one" onclick="show_video('r1')">
-                    <div class="pl one">
-                        <span class="name">Shiddhart</span>
-                        <br/>
-                        <span class="ID">204-768-392-7</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Ezaz</span>
-                        <br/>
-                        <span class="ID">181-509-589-2</span>
-                    </div>
-                </div>
-                <div class="round r-two" onclick="show_video('r2')">
-                    <div class="pl one">
-                        <span class="name">Debsil</span>
-                        <br/>
-                        <span class="ID">112-231-065-2</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Md Sabir</span>
-                        <br/>
-                        <span class="ID">247-668-616-9</span>
-                    </div>
-                </div>
-                <div class="round r-three" onclick="show_video('r3')">
-                    <div class="pl one">
-                        <span class="name">Atif</span>
-                        <br/>
-                        <span class="ID">196-758-057-8</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">BYE</span>
-                        <br/>
-                        <span class="ID"></span>
-                    </div>
-                </div>
-                <div class="round r-four" onclick="show_video('r4')">
-                    <div class="pl one">
-                        <span class="name">Shuvam</span>
-                        <br/>
-                        <span class="ID">234-919-676-1</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Sumanta Poddar</span>
-                        <br/>
-                        <span class="ID">229-843-650-6</span>
-                    </div>
-                </div>
-                
-                <div class="round r-five" onclick="show_video('r5')">
-                    <div class="pl one">
-                        <span class="name">Sarfaraz</span>
-                        <br/>
-                        <span class="ID">217-683-409-3</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">BYE</span>
-                        <br/>
-                        <span class="ID"></span>
-                    </div>
-                </div>
-                
-                <div class="round r-six" onclick="show_video('r6')">
-                    <div class="pl one">
-                        <span class="name">Ahmer</span>
-                        <br/>
-                        <span class="ID">219-220-299-2</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Sabyasachi</span>
-                        <br/>
-                        <span class="ID">238-402-538-5</span>
-                    </div>
-                </div>
-                
-                <div class="round r-seven" onclick="show_video('r7')">
-                    <div class="pl one">
-                        <span class="name">Ranjit</span>
-                        <br/>
-                        <span class="ID">226-565-094-4</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Sk</span>
-                        <br/>
-                        <span class="ID">244-141-416-9</span>
-                    </div>
-                </div>
-                
-                <div class="round r-eight" onclick="show_video('r8')">
-                    <div class="pl one">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">274-247-083-0</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">BYE</span>
-                        <br/>
-                        <span class="ID"></span>
-                    </div>
-                </div>
+	<head>
+		<title>Gamer's Adda</title>
+		<meta name="viewport" content="width:device-width,initial-scale:1.0">
+		<meta charset="UTF-8">
+        <link href="\ui\homepage\home_page.css" rel="stylesheet">
+		<script src="\ui\homepage\home_page.js"></script>
+	</head>
+	<body>
+		<header href="#">
+		    <h2>Gamer's Adda</h2>
+		</header>
+		<nav class="nav-container">
+		    <span class="navd " onclick="home()" href="">Home</span>
+		    <span class="navd " onclick="tournaments()" href="">Tournaments</span>
+		    <span class="navd " onclick="contact()" href="">Contact Us</span>
+		</nav>
+	<div id="Home" class="Home">
+		<article>
+		    
+One of numerous proper racks in standardized eight-ball: The two rear corner balls are of different suits, the 8 ball is in the center, and the apex ball is on the foot spot.
+Eight-ball (often spelled 8-ball or eightball, and sometimes called solids and stripes, spots and stripes in the UK[1] or, more rarely, bigs and littles/smalls, and highs and lows) is a pool (pocket billiards) game popular in much of the world, and the subject of international professional and amateur competition. Played on a pool table with six pockets, the game is so universally known in some countries that beginners are often unaware of other pool games and believe the word "pool" itself refers to eight-ball.[citation needed] The game has numerous variations, mostly regional. Standard eight-ball is the second most competitive professional pool game, after nine-ball, and for the last several decades ahead of straight pool.[citation needed]
+
+Eight-ball is played with cue sticks and 16 balls: a cue ball, and 15 object balls consisting of seven striped balls, seven solid-colored balls and the black 8 ball. After the balls are scattered with a break shot, the players are assigned either the group of solid balls or the stripes once a ball from a particular group is legally pocketed. The ultimate object of the game is to legally pocket the eight ball in a called pocket, which can only be done after all of the balls from a player's assigned group have been cleared from the table.
+            <br/>
+            <div class="wiki-link" href="https://en.wikipedia.org/wiki/Eight-ball" target="_self">
+                Want to know more?
+                <span class="tooltip-text">Click on it!</span>
             </div>
-        
-            <div class="r16-container"> <!--Pre-Quarter Final 1 to 4-->
-                <div class="round pq1" onclick="show_video('pq1')">
-                    <div class="pl one">
-                        <span class="name">Shiddhart</span>
-                        <br/>
-                        <span class="ID">204-768-392-7</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Debsil</span>
-                        <br/>
-                        <span class="ID">112-231-065-2</span>
-                    </div>
-                </div>
-                
-                <div class="round pq2" onclick="show_video('pq2')">
-                    <div class="pl one">
-                        <span class="name">Atif</span>
-                        <br/>
-                        <span class="ID">196-758-057-8</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Shuvam</span>
-                        <br/>
-                        <span class="ID">234-919-676-1</span>
-                    </div>
-                </div>
-                
-                <div class="round pq3" onclick="show_video('pq3')">
-                    <div class="pl one">
-                        <span class="name">Sarfaraz</span>
-                        <br/>
-                        <span class="ID">217-683-409-3</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Ahmer</span>
-                        <br/>
-                        <span class="ID">219-220-299-2</span>
-                    </div>
-                </div>
-                
-                <div class="round pq4" onclick="show_video('pq4')">
-                    <div class="pl one" style="color:black;text-decoration:line-through;">
-                        <span class="name">Ranjit</span>
-                        <br/>
-                        <span class="ID">226-565-094-4</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">274-247-083-0</span>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="rq-container"> <!--Quater Finals 1 & 2-->
-                <div class="round q1" onclick="show_video('q1')">
-                    <div class="pl one">
-                        <span class="name">Shiddhart</span>
-                        <br/>
-                        <span class="ID">204-768-392-7</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Atif</span>
-                        <br/>
-                        <span class="ID">196-758-057-8</span>
-                    </div>
-                 </div>
-                 
-                 <div class="round q2" onclick="show_video('q2')">
-                    <div class="pl one">
-                        <span class="name">Sarfaraz</span>
-                        <br/>
-                        <span class="ID">217-683-409-3</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">274-247-083-0</span>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="sf-container"> <!--Semi Final 1-->
-                <div class="round sf1" onclick="show_video('sf1')">
-                    <div class="pl one">
-                        <span class="name">Shiddhart</span>
-                        <br/>
-                        <span class="ID">204-768-392-7</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Sarfaraz</span>
-                        <br/>
-                        <span class="ID">217-683-409-3</span>
-                    </div>
-                 </div>
-            </div>
-            
-           <div class="final-container"> <!--Final-->
-                <div class="round final" id="final" onclick="show_video('final')">
-                    <div class="pl one">
-                        <div class="medal gold">1</div>
-                        <span class="name">Shiddhart</span>
-                        <br/>
-                        <span class="ID">204-768-392-7</span>
-                        
-                    </div>
-                    <div class="vs">
-                        FINAL
-                    </div>
-                    <div class="pl two">
-                        <div class="medal silver">2</div>
-                        <span class="name">Sayeed</span>
-                        <br/>
-                        <span class="ID">254-591-895-8</span>
-                    </div>
-                 </div>
-                
-               <div class="round tNf" id="tNf" onclick="show_video('tNf')">
-                        <div class="pl one">
-                            <div class="medal bronze">3</div>
-                            <span class="name">Sarfaraz</span>
-                            <br/>
-                            <span class="ID">217-683-409-3</span>
-                        </div>
-                        <div class="vs">
-                            3rd and 4th Place
-                        </div>
-                            <div class="pl two">
-                                <div class="medal green">4</div>
-                                <span class="name">Ravi</span>
-                                <br/>
-                                <span class="ID">214-281-452-3</span>
-                        </div>
-                </div> 
-            </div>
-        
-            <div class="sf-container"> <!--Semi Final 2-->
-                <div class="round sf2" onclick="show_video('sf2')">
-                    <div class="pl one">
-                        <span class="name">Ravi</span>
-                        <br/>
-                        <span class="ID">214-281-452-3</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Sayeed</span>
-                        <br/>
-                        <span class="ID">254-591-895-8</span>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="rq-container"> <!--Quater Finals 3 & 4-->
-                <div class="round q3" onclick="show_video('q3')">
-                    <div class="pl one" style="color:black;text-decoration:line-through;">
-                        <span class="name">Ehraz</span>
-                        <br/>
-                        <span class="ID">201-145-497-6</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Ravi</span>
-                        <br/>
-                        <span class="ID">214-281-452-3</span>
-                    </div>
-                 </div>
-                 
-                 <div class="round q4" onclick="show_video('q4')">
-                    <div class="pl one">
-                        <span class="name">Sayeed</span>
-                        <br/>
-                        <span class="ID">254-591-895-8</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">179-058-969-8</span>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="r16-container"> <!--Pre-Quarter Final 5 to 8-->
-                <div class="round pq5" onclick="show_video('pq5')">
-                    <div class="pl one">
-                        <span class="name">Ehraz</span>
-                        <br/>
-                        <span class="ID">201-145-497-6</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Nitesh</span>
-                        <br/>
-                        <span class="ID">193-473-690-1</span>
-                    </div>
-                </div>
-                
-                <div class="round pq6" onclick="show_video('pq6')">
-                    <div class="pl one">
-                        <span class="name">Ravi</span>
-                        <br/>
-                        <span class="ID">214-281-452-3</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">SRK</span>
-                        <br/>
-                        <span class="ID">264-202-930-8</span>
-                    </div>
-                </div>
-                
-                <div class="round pq7" onclick="show_video('pq7')">
-                    <div class="pl one">
-                        <span class="name" style="color:black;text-decoration:line-through;">Syed</span>
-                        <br/>
-                        <span class="ID">171-768-360-1</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Sayeed</span>
-                        <br/>
-                        <span class="ID">254-591-895-8</span>
-                    </div>
-                </div>
-                
-                <div class="round pq8" onclick="show_video('pq8')">
-                    <div class="pl one">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">179-058-969-8</span>
-                    </div>
-                    <div class="vs">
-                        VS
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">J</span>
-                        <br/>
-                        <span class="ID">245-068-993-1</span>
-                    </div>
-                 </div>
-            </div>
-            
-            <div class="r32-container"> <!--Round of 32 9 to 16-->
-                
-                <!--Fixture box-->
-                <div class="round r-nine" onclick="show_video('r9')">
-                    <div class="pl one">
-                        <span class="name" style="color:black;text-decoration:line-through;">Imtiyaz</span>
-                        <br/>
-                        <span class="ID">202-857-882-7</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Ehraz</span>
-                        <br/>
-                        <span class="ID">201-145-497-6</span>
-                    </div>
-                </div>
-                <div class="round r-ten" onclick="show_video('r10')">
-                    <div class="pl one">
-                        <span class="name">Nitesh</span>
-                        <br/>
-                        <span class="ID">193-473-690-1</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Ankur</span>
-                        <br/>
-                        <span class="ID">113-827-135-3</span>
-                    </div>
-                </div>
-                <div class="round r-eleven" onclick="show_video('r11')">
-                    <div class="pl one" style="color:black;text-decoration:line-through;">
-                        <span class="name">687d8eb571146a</span>
-                        <br/>
-                        <span class="ID">274-245-820-9</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">Ravi</span>
-                        <br/>
-                        <span class="ID">214-281-452-3</span>
-                    </div>
-                </div>
-                <div class="round r-twelve" onclick="show_video('r12')">
-                    <div class="pl one">
-                        <span class="name">SRK</span>
-                        <br/>
-                        <span class="ID">264-202-930-8</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">BYE</span>
-                        <br/>
-                        <span class="ID"></span>
-                    </div>
-                </div>
-            
-                <div class="round r-thirteen" onclick="show_video('r13')">
-                    <div class="pl one">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">171-768-360-1</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two">
-                        <span class="name">BYE</span>
-                        <br/>
-                        <span class="ID"></span>
-                    </div>
-                </div>                                                  
-                
-                
-                <div class="round r-fourteen" onclick="show_video('r14')">
-                    <div class="pl one">
-                        <span class="name">Sayeed</span>
-                        <br/>
-                        <span class="ID">254-591-895-8</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Abhishek</span>
-                        <br/>
-                        <span class="ID">225-654-772-4</span>
-                    </div>
-                </div>
-                
-                <div class="round r-fifteen" onclick="show_video('r15')">
-                    <div class="pl one">
-                        <span class="name">Syed</span>
-                        <br/>
-                        <span class="ID">179-058-969-8</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">Asif</span>
-                        <br/>
-                        <span class="ID">259-757-938-6</span>
-                    </div>
-                </div>                                                  
-                
-                <div class="round r-sixteen" onclick="show_video('r16')">
-                    <div class="pl one">
-                        <span class="name">Zain Khan</span>
-                        <br/>
-                        <span class="ID">260-191-371-6</span>
-                    </div>
-                    <div class="vs">
-                        7.30 - 7.45pm
-                    </div>
-                    <div class="pl two" style="color:black;text-decoration:line-through;">
-                        <span class="name">J</span>
-                        <br/>
-                        <span class="ID">245-068-993-1</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="video-frame" >
-           <iframe id="vid" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:none"></iframe>
-           <span id="close" onclick="close_frame()">&#10006;</span>
-        </div>
-        
-        <footer>
-            <div class="social">
-                <h4>
-                    Contact Us<br/>
-                    <a href="" target="_self">Facbook Page</a>
-                    <br/>
-                    <a style="text-decoration:none;"
-                    id="tel" href="tel:8335003838">8335003838</a>
-                    <span class="organised">Organised By Pool Adda</span>
-                </h4>    
-            </div>
-        </footer>
-    </body>
+		</article>
+
+		<div class="inf-container">
+		    <div href="" class="col-4 tournament-info">
+		    Upcoming Tournament
+		    <span href="" class="info">Beijing<br/>August 15,2018</span>
+		</div>
+		<div href="" class="col-4 tournament-info">
+		    Ongoing Tournament
+		    <span href="#" class="info" style="cursor:none;">Nothing</span>
+		    <br/>
+		</div>
+		<div href="" class="col-4 tournament-info">
+		    Completed Tournament
+		    <span href="" class="info">London</span>
+		    <br/>
+		</div>
+		</div>
+	</div> <!--End of Class="Home"-->
+	    
+	    <div class="Tournaments" id="Tournaments" style="display:none">
+	        
+	        <div class="tour" id="T20180815001">
+	            <h4 class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(Beijing)</span></h4>
+	            <span class="status">Status</span> : <span class="stat-val">Upcoming</span>
+	            <br/>
+	            <span class="duration">Duration</span> : <span class="dur-val">15/08/2018 - </span>
+	        </div>
+	        
+	        <div class="tour" id="T20180805001">
+	            <h4 class="Tournament-heading" style="text-decoration:underline overline">8 Ball Pool Tournament<span style="font-style:italic">(London)</span></h4>
+	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
+	            <br/>
+	            <span class="duration">Duration</span> : <span class="dur-val">05/08/2018 - 08/08/2018</span>
+	        </div>
+	        
+	    </div> <!--End of Tournament-->
+	    
+	    <div class="Contact" id="Contact" style="display:none">
+	        <div class="con-info">
+    	        Whatsapp - <span class="val">8335003838</span>
+    	        <br/>
+    	        Mobile - <span class="val">7003720380</span>
+    	        <br/>
+    	        Email - <span class="val">pooladda2k18@gmail.com</span>
+    	        <br/>
+	        </div>
+	    </div> <!--End of Contact-->
+	    
+		<footer>
+		    <span class="copyrights">&copy;Gamer's Adda</span>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,170 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    background:#ffff80;
+}
+
+[class*="col-"]{
+    float:left;
+    padding:2%;
+}
+
+.col-1{width:8.333%;}
+.col-2{width:16.666%;}
+.col-3{width:25%;}
+.col-4{width:33.333%;}
+.col-5{width:41.666%;}
+.col-6{width:50%;}
+.col-7{width:58.333%;}
+.col-8{width:64.666%;}
+.col-9{width:75%;}
+.col-10{width:83.333%;}
+.col-11{width:91.666%;}
+.col-12{width:100%;}
+
+
+
+.wiki-link{
+    display:inline-block;
+    font-family:"Garamond";
+    cursor:pointer;
+    text-decoration:underline;
+    color:#4d4d4d;
+    background:yellow;
+    width:auto;
+    padding:0;
+    margin:0;
+}
+
+
+.tooltip-text{
+    display:none;
+    position:absolute;
+    padding:0;
+    border:1px solid black;
+    border-radius:2%;
+    background-color:#4dff4d;
+    color:#ff1a1a;
+    left:35%;
+}
+
+.wiki-link:hover .tooltip-text{
+    display:inline-block;
+}
+
+h2{
+    margin:0;
+    padding:0;
+    text-align:center;
+    color:#44cc00;
+}
+header{
+    font-family:"Trebuchet MS";
+    cursor:pointer;
+    font-size:200%;
+    background:#6666ff;
+}
+
+article{
+    background:#99ebff;
+}
+
+article,.tournament-info,.tour,.Contact{
+    padding:2%;
+    border:1px solid transparent;
+    border-radius:1%;
+    font-family:"Times New Roman";
+    box-shadow:0 0 3px #999999;
+}
+
+.inf-container{
+    display:flex;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.tournament-info{
+    font-size:100%;
+    width:31.333%;
+    background:#80ff80;
+}
+
+.info{
+    font-size:60%;
+    text-decoration:underline;
+    text-align:center;
+    cursor:pointer;
+}
+
+.nav-container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.navd{
+    cursor:pointer;
+    display:inline-block;
+    height:auto;
+    background-color:#333333;
+    color:white;
+    border-top:2px solid #ffff4d;
+    padding:1%;
+}
+
+.navd:last-child{
+    border-bottom:2px solid #ffff4d;
+}
+
+.navd:hover{
+    background-color:#000000;
+}
+
+footer{
+    background:#33adff;
+    padding:2%;
+    color:#cc3300;
+    font-family:"Georgia";
+    font-weight:bolder;
+    margin-top:2%;
+}
+
+.Tournaments{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.Tournament-heading{
+    margin:0;
+    padding:0;
+}
+
+.tour{
+    margin-top:1%;
+    margin-bottom:1%;
+    background:#99ff99;
+}
+
+.tour:first-child{
+    margin-bottom:2%;
+}
+
+.status,.duration{
+    background:#ffff33;
+}
+
+.val{
+    text-decoration:underline;
+    font-weight:normal;
+}
+
+.Contact{
+    background:#ff99cc;
+    font-weight:bold;
+}
