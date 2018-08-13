@@ -48,7 +48,7 @@ html{
     border-radius:2%;
     background-color:#4dff4d;
     color:#ff1a1a;
-    left:35%;
+    left:25%;
 }
 
 .wiki-link:hover .tooltip-text{
@@ -70,6 +70,7 @@ header{
 
 article{
     background:#99ebff;
+    font-size:3vw;
 }
 
 article,.tournament-info,.tour,.Contact{
@@ -91,6 +92,7 @@ article,.tournament-info,.tour,.Contact{
 .tournament-info{
     width:31.333%;
     background:#80ff80;
+    font-weight:bolder;
 }
 
 .info{
@@ -98,6 +100,8 @@ article,.tournament-info,.tour,.Contact{
     text-decoration:underline;
     text-align:center;
     cursor:pointer;
+    color:#ff0000;
+    font-weight:bold;
 }
 
 .nav-container{
