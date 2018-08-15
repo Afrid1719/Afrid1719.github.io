@@ -3,7 +3,7 @@
 }
 
 html{
-    background:#ffff80;
+    background:#000099;
     font-size:3vw;
 }
 
@@ -59,13 +59,13 @@ h2{
     margin:0;
     padding:0;
     text-align:center;
-    color:#44cc00;
+    color:black;
 }
 header{
-    font-family:"Trebuchet MS";
+    /*font-family:"Trebuchet MS";*/
     cursor:pointer;
     font-size:5vw;
-    background:#6666ff;
+    background:#ffdb4d;
 }
 
 article{
@@ -91,8 +91,9 @@ article,.tournament-info,.tour,.Contact{
 
 .tournament-info{
     width:31.333%;
-    background:#80ff80;
+    background:#ffe680;
     font-weight:bolder;
+    border-radius:3%;
 }
 
 .info{
@@ -106,28 +107,42 @@ article,.tournament-info,.tour,.Contact{
 
 .nav-container{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
     margin-top:2%;
     margin-bottom:2%;
 }
 
 .navd{
     cursor:pointer;
-    display:inline-block;
+    display:block;
     height:auto;
-    background-color:#333333;
-    color:white;
-    border-top:2px solid #ffff4d;
-    padding:1%;
+    background-color:#99bbff;
+    color:black;
+    font-weight:bolder;
+    border-radius:3%;
+    padding:1% 2% 1% 2%;
+    font-size:4vw;
+    margin-right:2%;
+    /*float:left;*/
+}
+/*
+.navd::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
-.navd:last-child{
-    border-bottom:2px solid #ffff4d;
+.Home::before{
+    content:"";
+    clear:both;
+    display:table;
 }
-
+*/
 .navd:hover{
-    background-color:#000000;
+    background-color:#1a66ff;
 }
 
 footer{
@@ -156,7 +171,7 @@ footer{
 }
 
 .tour:first-child{
-    margin-bottom:2%;
+    margin-top:2%;
 }
 
 .status,.duration{
