@@ -61,19 +61,19 @@ h2{
     text-align:center;
     color:black;
 }
-header{
+.header{
     /*font-family:"Trebuchet MS";*/
     cursor:pointer;
-    font-size:5vw;
+    font-size:7vw;
     background:#ffdb4d;
 }
 
-article{
+.article{
     background:#99ebff;
     font-size:3vw;
 }
 
-article,.tournament-info,.tour,.Contact{
+.article,.tournament-info,.tour,.Contact{
     padding:2%;
     border:1px solid transparent;
     border-radius:1%;
@@ -126,6 +126,7 @@ article,.tournament-info,.tour,.Contact{
     padding:1% 2% 1% 2%;
     font-size:4vw;
     margin-right:2%;
+    word-wrap:normal;
     /*float:left;*/
 }
 /*
@@ -160,8 +161,13 @@ footer{
 }
 
 .Tournament-heading{
+    display:block;
+    font-weight:bold;
+    text-decoration:underline;
     margin:0;
     padding:0;
+    cursor:pointer;
+    font-size:3.5vw;
 }
 
 .tour{
