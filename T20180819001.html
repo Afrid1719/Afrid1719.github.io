@@ -433,7 +433,7 @@
         
         <!--Login box-->
         
-        <form style="display:none" id="Login-box" class="login-box">
+        <form style="visibility:hidden" id="Login-box" class="login-box" onsubmit="return Login_permit()">
             <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_login()">&#10006;</span>
             <span id="username">Username:</span><br/>
             <input id="usrname" type="text" placeholder="Username Here...." required>
@@ -441,13 +441,13 @@
             <span id="password">Password:</span><br/>
             <input id="pwd" type="password" placeholder="Password Here...." required>
             <br/><br/>
-            <button id="login_btn" style="" onclick="Login_permit()">Login</button>
+            <input type="submit" id="login_btn">
         </form>
         
         
         <!--Update Box-->
-        <form id="Update-box" class="Update-box" style="display:none;">
-            <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_form()">&#10006;</span>
+        <form id="Update-box" class="Update-box" style="visibility:hidden;" onsubmit="return update()">
+            <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_update()">&#10006;</span>
             <h4>Fixture Update</h4>
             <span class="details">Player Name</span><br/>
             <input id="name" type="text" placeholder="Enter player's name..."><br/>
@@ -456,7 +456,7 @@
             <span class="details">Contact</span><br/>
             <input id="contact_no" type="tel" placeholder="Player's Contact No...."><br/>
             <span class="details">Round :</span><br/>
-            <select name="rounds">
+            <select id="rounds">
                 <option value="pq1" selected>Pre-Quarter Final 1</option>
                 <option value="pq2">Pre-Quarter Final 2</option>
                 <option value="pq3">Pre-Quarter Final 3</option>
@@ -474,13 +474,13 @@
                 <option value="final">Final</option>
             </select><br/>
             <span class="details">Player No. : </span><br/>
-            <select name="players">
+            <select id="players">
                 <option value="p1">Player No. 1</option>
                 <option value="p2">Player No. 2</option>
                 <option value="p3">Player No. 3</option>
                 <option value="p4">Player No. 4</option>
             </select><br/><br/>
-            <button id="submit_btn" onclick="">Submit</button>
+            <input id="submit_btn" type="submit">
             <input id="reset_btn" type="reset">
         </form>
     </body>

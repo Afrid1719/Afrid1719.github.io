@@ -1,15 +1,12 @@
 function login(){
-    document.getElementById('Login-box').style.display="block";
+    document.getElementById('Login-box').style.visibility="visible";
     document.getElementById('main-container').style.opacity="0.3";
 }
 
 function close_login(){
-    document.getElementById('Login-box').style.display="none";
+    document.getElementById('Login-box').style.visibility="hidden";
     document.getElementById('main-container').style.opacity="1";
 }
-
-var user_credentials=("Afrid","Ashfaque");
-var password_credentials=("Avada_Kedavra","Expelliarmus");
 
 var credentials={
     Afrid:"Avada_Kedavra",
@@ -38,16 +35,27 @@ function Login_permit(){
     }
     
     if(c===0){
-        document.getElementById('Update-box').style.display='block';
-        document.getElementById('Login-box').style.display="none";
+        document.getElementById('Update-box').style.visibility="visible";
+        document.getElementById('Login-box').style.visibility="hidden";
         document.getElementById('main-container').style.opacity="0.3";
     }
     else{
         alert("Invalid Credentials!!??");
     }
+    return false;
 }
 
 function close_update(){
     document.getElementById('Update-box').style.display="none";
     document.getElementById('main-container').style.opacity="1";
+}
+
+function update(){
+    var pl_name=document.getElementById("name").value;
+    var uid=document.getElementById("UID").value;
+    var contact=document.getElementById("contact_no").value;
+    var fix_round=document.getElementById("rounds").value;
+    var pl_no=document.getElementById("players").value;
+    document.getElementById(fix_round+"-"+pl_no).innerHTML=pl_name+"<br/>"+uid+"<br/>"+contact;
+    return false;
 }
