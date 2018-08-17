@@ -3,7 +3,7 @@ function login(){
     document.getElementById('main-container').style.opacity="0.3";
 }
 
-function close_form(){
+function close_login(){
     document.getElementById('Login-box').style.display="none";
     document.getElementById('main-container').style.opacity="1";
 }
@@ -11,26 +11,39 @@ function close_form(){
 var user_credentials=("Afrid","Ashfaque");
 var password_credentials=("Avada_Kedavra","Expelliarmus");
 
+var credentials={
+    Afrid:"Avada_Kedavra",
+    Ashfaque:"Expelliarmus"
+};
+
 function Login_permit(){
     var usrname=document.getElementById('usrname').value;
     var pwd=document.getElementById('pwd').value;
-    for(var i=0;i<2;i++)
-    {
-        if((user_credentials[i]===usrname) && (password_credentials[i]===pwd))
-        {
-            document.getElementById('Update-box').style.display='block';
-            document.getElementById('Login-box').style.display="none";
-            document.getElementById('main-container').style.opacity="0.3";
-            break;
-        }
-        else if(i==1)
-        {
-            if((user_credentials[i]!==usrname) || (password_credentials!==pwd))
-            {
-                alert("Invalid Credentials!!??");
+    var check;
+    var c=0;
+    for(check in credentials){
+        if(check===usrname){
+            if(credentials[check]===pwd){
+                c=0;
+                break;
+            }
+            else{
+                c=-1;
                 break;
             }
         }
+        else{
+            c=-1;
+        }
+    }
+    
+    if(c===0){
+        document.getElementById('Update-box').style.display='block';
+        document.getElementById('Login-box').style.display="none";
+        document.getElementById('main-container').style.opacity="0.3";
+    }
+    else{
+        alert("Invalid Credentials!!??");
     }
 }
 

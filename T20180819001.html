@@ -3,10 +3,8 @@
     <head>
         <title>Ludo Game</title>
         <meta name="viewport" content="width:device-width,initial-scale=1.0">
-        <link href="/ui/tournaments/T20180819001/T20180819001.css
-" rel="stylesheet">
-        <script src="/ui/tournaments/T20180819001/T20180819001.js
-"></script> 
+        <link href="/ui/tournaments/T20180819001/T20180819001.css" rel="stylesheet">
+        <script src="/ui/tournaments/T20180819001/T20180819001.js"></script> 
     </head>
     <body>
         <header>
@@ -436,16 +434,18 @@
         <!--Login box-->
         
         <form style="display:none" id="Login-box" class="login-box">
-            <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_update()">&#10006;</span>
+            <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_login()">&#10006;</span>
             <span id="username">Username:</span><br/>
             <input id="usrname" type="text" placeholder="Username Here...." required>
             <br/>
             <span id="password">Password:</span><br/>
             <input id="pwd" type="password" placeholder="Password Here...." required>
             <br/><br/>
-            <button style="position:absolute;left:50%;transform:translate(-50%,0);cursor:pointer;" onclick="Login_permit()">Login</button>
+            <button id="login_btn" style="" onclick="Login_permit()">Login</button>
         </form>
         
+        
+        <!--Update Box-->
         <form id="Update-box" class="Update-box" style="display:none;">
             <span style="position:absolute;top:3%;right:3%;cursor:pointer;font-size:2vw;" id="close" onclick="close_form()">&#10006;</span>
             <h4>Fixture Update</h4>
@@ -454,7 +454,7 @@
             <span class="details">UID</span><br/>
             <input id="UID" type="text" placeholder="Type here player's UID.."><br/>
             <span class="details">Contact</span><br/>
-            <input id="contact_no" type="number" placeholder="Player's Contact No...."><br/>
+            <input id="contact_no" type="tel" placeholder="Player's Contact No...."><br/>
             <span class="details">Round :</span><br/>
             <select name="rounds">
                 <option value="pq1" selected>Pre-Quarter Final 1</option>
@@ -480,8 +480,8 @@
                 <option value="p3">Player No. 3</option>
                 <option value="p4">Player No. 4</option>
             </select><br/><br/>
-            <button onclick="">Submit</button>
-            <input type="reset">
+            <button id="submit_btn" onclick="">Submit</button>
+            <input id="reset_btn" type="reset">
         </form>
     </body>
 </html>
