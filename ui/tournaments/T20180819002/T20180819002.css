@@ -1,0 +1,158 @@
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-size:2vw;
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(to left top,#4d88ff,#00ccff);
+    width:100%;
+}
+header{
+    margin:0;
+    padding:2%;
+    background-image:linear-gradient(to bottom right,#00cc99,#00ff00,#ccff33,#f2f2f2,#ff9900,#ffcc00);
+}
+.heading{
+    font-size:5vw;
+    text-align:center;
+    font-weight:bolder;
+}
+
+input{
+    background:#cccccc;
+}
+
+#username,#password{
+    font-size:3.5vw;
+}
+
+.Login{
+    cursor:pointer;
+    text-decoration:underline;
+    font-size:3vw;
+    text-align:right;
+}
+
+.login-box,.Update-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:white;
+    padding:10% 10% 15% 10%;
+    box-shadow:0 0 10px 2px #468bb9;
+    background-color:#0099ff;
+}
+
+h4{
+    text-align:center;
+    font-weight:bolder;
+    text-decoration:underline;
+    font-size:5vw;
+    color:#ff3385;
+}
+
+.details{
+    font-size:3.5vw;
+}
+
+.round{
+    font-size:2vw;
+    text-decoration:underline;
+    position:relative;
+    border:1px solid red;
+}
+
+
+.main-container{
+    display:flex;
+    flex-flow:row nowrap;
+    margin:0;
+    padding:3% 0 3% 0;
+    z-index:100;
+}
+
+.column{
+    display:flex;
+    flex-flow:column nowrap;
+    width:14.25%;
+    /*width:14%;*/
+    justify-content:space-around;
+    align-items:center;
+    height:100vh;
+    /*border:1px solid black;*/
+}
+
+.fixture-box{
+    border:1px solid black;
+   /* margin:5% 2% 5% 2%;*/
+}
+
+[class*="player-"]{
+    display:block;
+    padding:0;
+    margin:0;
+    color:#e60000;
+    text-shadow:0 0 0.3px #d3d3d3;
+    background:#80ff80;
+    border-bottom:1px solid black;
+}
+
+.fixture-box:last-child{
+    border-bottom:none;
+}
+
+footer{
+    padding:2%;
+    text-align:center;
+    background-image:linear-gradient(to right,#ffcc00,#ff9900,#ccff33,#f2f2f2,#f2f2f2,#f2f2f2,#00ff00,#00cc99);
+    font-weight:bold;
+    font-size:3vw;
+}
+
+input[type="text"],input[type="password"],input[type="tel"],option{
+    padding:2%;
+}
+
+#login_btn{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+}
+
+#login_btn,#reset_btn,#submit_btn{
+    cursor:pointer;
+    width:35%;
+    height:15%;
+    font-size:3vw;
+}
+
+/*
+[class*="col-"]{
+    float:left;
+    padding:2%;
+}
+
+.col-1{width:8.333%;}
+.col-2{width:16.666%;}
+.col-3{width:25%;}
+.col-4{width:33.333%;}
+.col-5{width:41.666%;}
+.col-6{width:50%;}
+.col-7{width:58.333%;}
+.col-8{width:64.666%;}
+.col-9{width:75%;}
+.col-10{width:83.333%;}
+.col-11{width:91.666%;}
+.col-12{width:100%;}
+
+.row::after{
+    content:"";
+    clear:both;
+    display:"table";
+}
+
+*/
