@@ -71,7 +71,7 @@ h4{
     display:flex;
     flex-flow:row nowrap;
     margin:0;
-    padding:0;
+    padding:3% 0 3% 0;
     z-index:100;
 }
 
