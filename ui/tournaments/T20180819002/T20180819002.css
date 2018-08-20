@@ -7,13 +7,13 @@ body{
     font-size:2vw;
     margin:0;
     padding:0;
-    background-image:linear-gradient(to left top,#4d88ff,#00ccff);
+    background-image:linear-gradient(to bottom right,#66ff66,#0066ff);
     width:100%;
 }
 header{
     margin:0;
     padding:2%;
-    background-image:linear-gradient(to bottom right,#00cc99,#00ff00,#ccff33,#f2f2f2,#ff9900,#ffcc00);
+    background-image:linear-gradient(to right,#ffe066,#ffb366,#ffa366,#ff6666);
 }
 .heading{
     font-size:5vw;
@@ -27,6 +27,13 @@ input{
 
 #username,#password{
     font-size:3.5vw;
+}
+
+.vs{
+    font-size:2vw;
+    color:black;
+    font-weight:bold;
+    background-color:#ffff00;
 }
 
 .Login{
@@ -95,9 +102,9 @@ h4{
     display:block;
     padding:0;
     margin:0;
-    color:#e60000;
+    color:#007acc;
     text-shadow:0 0 0.3px #d3d3d3;
-    background:#80ff80;
+    background:#ffbf80;
     border-bottom:1px solid black;
 }
 
@@ -108,7 +115,7 @@ h4{
 footer{
     padding:2%;
     text-align:center;
-    background-image:linear-gradient(to right,#ffcc00,#ff9900,#ccff33,#f2f2f2,#f2f2f2,#f2f2f2,#00ff00,#00cc99);
+    background-image:linear-gradient(to left,#9fff80,#80ff80,#80ffdf,#0099cc);
     font-weight:bold;
     font-size:3vw;
 }
