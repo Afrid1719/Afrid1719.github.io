@@ -25,15 +25,12 @@ input{
     background:#cccccc;
 }
 
-#username,#password{
-    font-size:3.5vw;
+#usrname,#pwd{
+    width:25vw;
 }
 
-.vs{
-    font-size:2vw;
-    color:black;
-    font-weight:bold;
-    background-color:#ffff00;
+#username,#password{
+    font-size:2.5vw;
 }
 
 .Login{
@@ -132,7 +129,7 @@ input[type="text"],input[type="password"],input[type="tel"],option{
 
 #login_btn,#reset_btn,#submit_btn{
     cursor:pointer;
-    width:35%;
+    width:15vw;
     height:15%;
     font-size:3vw;
 }
