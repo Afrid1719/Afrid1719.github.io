@@ -8,41 +8,38 @@
 		<script src="\ui\homepage\home_page.js"></script>
 	</head>
 	<body>
-		<a class="header" style="display:block;text-decoration:none" href="#Home">
+		<header href="#">
 		    <h2>Gamer's Adda</h2>
-		</a>
+		</header>
 		<nav class="nav-container">
-		    <span class="navd " onclick="home()" href="">Home</span>
-		    <span class="navd " onclick="tournaments()" href="">Tournaments</span>
-		    <span class="navd " onclick="contact()" href="">Contact Us</span>
+		    <div class="navd " onclick="home()" href="">Home</div>
+		    <div class="navd " onclick="tournaments()" href="">Tournaments</div>
+		    <div class="navd " onclick="contact()" href="">Contact Us</div>
 		</nav>
+    
+    <div class="logo" id="logo">Gamer's Adda</div>
+    
 	<div id="Home" class="Home">
 		<div class="article">
 		    
 <p>Gamer's Adda is all about digital gaming.Here,Gaming in the sense means "playing in the digital world,getting rewards of real world".Here you can participate in different online games and win real cash money.This is the place where we encourage you to show your mobile games' skills and experience to earn you rewards.</p>
 <p>So lets get started with these mobile games and make your skills and experience worthy.And please do share this with your family,friends,colleagues, and even your enemies(that will give you the chance to defeat them in this digital world, LOL ).Happy Gaming and Good Luck!</p>
-            <br/>
 		</div>
-		<br/>
-
-        <!-- Promotion Video <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/OTbh1LtFKMw?ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
-        <br/>
-        <!--<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/v5bAicSRdZU?ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div> -->
-
+<!--<div style="position:relative;height:0;padding-bottom:56.25%;margin:0 1vw 0 1vw;"><iframe src="https://www.youtube.com/embed/YZe9GL3Zg_8?ecver=2?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>-->
 		<div class="inf-container">
 		    <div class="col-4 tournament-info">
 		    Upcoming Tournament<br/>
-		    <a href="#" class="info">Las Vegas</a>
+		    <a style="display:block;text-align:left;text-decoration:none" href="" class="info">TBD</a>
+		    <a style="display:block;text-align:left" href="" class="info"></a>
 		    </div>
 		    <div class="col-4 tournament-info">
 		    Ongoing Tournament<br/>
-		    <a href="#" class="info" style="cursor:none;text-decoration:none;">None</a>
+		    <a href="#" class="info" style="cursor:none;text-decoration:none;">Nothing</a>
 		    <br/>
 		    </div>
 		    <div class="col-4 tournament-info">
 		    Last Tournament<br/>
-		    <a style="display:block;text-align:left" href="/T20180819002.html" class="info">Beijing :: August 19,2018</a>
-		    <a href="/T20180819001.html" style="display:block;text-align:left" class="info">Ludo King :: August 19,2018</a>
+		    <a href="#" target="_self" class="info">Ludo King</a>
 		    <br/>
 		    </div>
 		</div>
@@ -54,36 +51,22 @@
 	    
 	    <div class="Tournaments" id="Tournaments" style="display:none">
 	        
-			<div class="tour" id="T20180829001">
-	            <a href="" class="Tournament-heading">Ludo King Tournament<span style="font-style:italic"></span></a>
-	            <span class="status">Status</span> : <span class="stat-val">......</span>
-	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">29/08/2018</span>
-	        </div>
-			
-			<div class="tour" id="T20180819001">
-	            <a href="/T20180819002.html" class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(Las Vegas)</span></a>
+	        <div class="tour" id="T20180805001">
+	            <h4 class="Tournament-heading">Ludo King Tournament<span style="font-style:italic"></span></h4>
 	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
 	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val"></span>
-	        </div>
-			
-	        <div class="tour" id="T20180819001">
-	            <a href="/T20180819001.html" class="Tournament-heading">Ludo King Tournament<span style="font-style:italic"></span></a>
-	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
-	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">19/08/2018</span>
+	            <span class="duration">Date</span> : <span class="dur-val">20/08/2018</span>
 	        </div>
 	        
-	        <div class="tour" id="T20180819001">
-	            <a href="/T20180819002.html" class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(Beijing)</span></a>
+	        <div class="tour" id="T20180815001">
+	            <h4 class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(Beijing)</span></h4>
 	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
 	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">19/08/2018</span>
+	            <span class="duration">Date</span> : <span class="dur-val">20/08/2018</span>
 	        </div>
 	        
 	        <div class="tour" id="T20180805001">
-	            <a href="/T20180805001.html" class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(London)</span></a>
+	            <h4 class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(London)</span></h4>
 	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
 	            <br/>
 	            <span class="duration">Date</span> : <span class="dur-val">05/08/2018</span>
@@ -93,15 +76,25 @@
 	    
 	    <div class="Contact" id="Contact" style="display:none">
 	        <div class="con-info">
-    	        Whatsapp - <span class="val">8335003838</span>
+    	        Whatsapp - <span class="val">98310066399/8335003838</span>
     	        <br/>
-    	        Mobile - <span class="val">7003720380</span>
+    	        Mobile - <span class="val">9831066399</span>
     	        <br/>
     	        Email - <span class="val">pooladda2k18@gmail.com</span>
     	        <br/>
 	        </div>
 	    </div> <!--End of Contact-->
-	    
+    <div class="bottom-pic-container" id="pic-container">
+	    <div class="pic">
+        <img class="pic-1" src="https://america.cgtn.com/wp-content/uploads/2018/02/Mobile-gaming-revenue-takes-over-PC-and-console-games-.jpg" width="150vw" height="150vw" alt="Mobile Gaming"/>
+    </div>
+    <div class="pic">
+      <img class="pic-1" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/A_Player_Playing_PUBG_Mobile.jpg" width="150vw" height="150vw" alt="PUBG on Mobile"/>
+    </div>
+    <div class="pic">
+      <img class="pic-1" src="https://futhead.cursecdn.com/static/uploads/news/WT_Revamp.jpg" width="150vw" height="150vw" alt="Fifa Mobile"/>
+    </div>
+  </div> <!--Bottom pics container-->
 		<footer>
 		    <span class="copyrights">&copy;Gamer's Adda</span>
 		</footer>

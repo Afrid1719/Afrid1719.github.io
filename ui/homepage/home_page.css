@@ -2,58 +2,21 @@
     box-sizing:border-box;
 }
 
-html{
-    background:#000099;
-    font-size:3vw;
+html,body{
+  background:#000099;
+  background-image:linear-gradient(to left top,#4d88ff,#00ccff);
+  padding:0;
+  margin:0;
 }
 
-[class*="col-"]{
-    float:left;
-    padding:2%;
-}
-
-.col-1{width:8.333%;}
-.col-2{width:16.666%;}
-.col-3{width:25%;}
-.col-4{width:33.333%;}
-.col-5{width:41.666%;}
-.col-6{width:50%;}
-.col-7{width:58.333%;}
-.col-8{width:64.666%;}
-.col-9{width:75%;}
-.col-10{width:83.333%;}
-.col-11{width:91.666%;}
-.col-12{width:100%;}
-
-
-
-.wiki-link{
-    display:inline-block;
-    font-family:"Garamond";
+header{
     cursor:pointer;
-    text-decoration:underline;
-    color:#4d4d4d;
-    background:yellow;
-    width:auto;
-    padding:0;
-    margin:0;
+    font-size:7vw;
+    background:#ffdb4d;
+  background-image:linear-gradient(to bottom right,#00cc99,#00ff00,#ccff33,#f2f2f2,#ff9900,#ffcc00);
+    margin:0 0 1vw 0;
 }
 
-
-.tooltip-text{
-    display:none;
-    position:absolute;
-    padding:0;
-    border:1px solid black;
-    border-radius:2%;
-    background-color:#4dff4d;
-    color:#ff1a1a;
-    left:25%;
-}
-
-.wiki-link:hover .tooltip-text{
-    display:inline-block;
-}
 
 h2{
     margin:0;
@@ -61,58 +24,16 @@ h2{
     text-align:center;
     color:black;
 }
-.header{
-    /*font-family:"Trebuchet MS";*/
-    cursor:pointer;
-    font-size:7vw;
-    background:#ffdb4d;
-}
 
-.article{
-    background:#99ebff;
-    font-size:3vw;
-}
-
-.article,.tournament-info,.tour,.Contact{
-    padding:2%;
-    border:1px solid transparent;
-    border-radius:1%;
-    font-family:"Times New Roman";
-    box-shadow:0 0 3px #999999;
-}
-
-.inf-container{
-    display:flex;
-    justify-content:space-between;
-    flex-flow:row nowrap;
-    margin-top:2%;
-    margin-bottom:2%;
-}
-
-.tournament-info{
-    width:31.333%;
-    background:#ffe680;
-    font-weight:bolder;
-    border-radius:3%;
-}
-
-.info{
-    font-size:2vw;
-    text-decoration:underline;
-    text-align:center;
-    cursor:pointer;
-    color:#ff0000;
-    font-weight:bold;
+h2:hover{
+  color:#404040;
 }
 
 .nav-container{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
-    align-items:center;
-    margin-top:2%;
-    margin-bottom:2%;
+  display:flex;
+  flex-flow:column nowrap;
+  padding : 0;
+  margin: 0.5vw;
 }
 
 .navd{
@@ -122,52 +43,85 @@ h2{
     background-color:#99bbff;
     color:black;
     font-weight:bolder;
-    border-radius:3%;
     padding:1% 2% 1% 2%;
     font-size:4vw;
-    margin-right:2%;
-    word-wrap:normal;
+    border-radius:3vw;
     /*float:left;*/
 }
-/*
-.navd::after{
-    content:"";
-    clear:both;
-    display:table;
+.navd:nth-child(1){
+  margin:0.5vw 0 0 0;
 }
-
-.Home::before{
-    content:"";
-    clear:both;
-    display:table;
+.navd:nth-child(2){
+    margin:0.5vw 0 0.5vw 0;
 }
-*/
+.navd:nth-child(3){
+  margin:0 0 0.5vw 0;
+}
 .navd:hover{
     background-color:#1a66ff;
 }
 
-footer{
-    background:#33adff;
-    padding:2%;
-    color:#cc3300;
-    font-family:"Georgia";
-    font-weight:bolder;
-    margin-top:2%;
+.article{
+    background:#99ebff;
+    font-size:3vw;
+    margin:10vw 0.6vw 3vw 0.6vw;
 }
 
-.Tournaments{
-    display:flex;
-    flex-flow:column nowrap;
+.article,.tournament-info,.tour,.Contact{
+    padding:1.5vw;
+    border:1px solid transparent;
+    border-radius:1vw;
+    font-family:"Times New Roman";
+    box-shadow:0 0 3px #999999;
+  margin:1vw 0.6vw 1vw 0.6vw;
+}
+
+.tournament-info{
+    background:#ffe680;
+    font-weight:bolder;
+    border-radius:1.4vw;
+  font-size:3vw;
+}
+
+.tournament-info:nth-child(2){
+    margin:1vw 0.6vw 1vw 0.6vw; 
+}
+footer{
+  position:relative;
+    background:#ff7733;
+    padding:2vw;
+    color:white;
+    text-align:center;
+    text-shadow:0 0.4vw 0.5vw black; 
+    font-family:"Georgia";
+    font-weight:bolder;
+    font-size:2vw;
+    margin:2vw 0 0 0;
+    width:100vw;
+    bottom:0vw;
+}
+
+.Contact{
+    background:#ff99cc;
+    font-weight:bold;
+  font-size:3.5vw;
+}
+
+.status,.duration{
+    background:#ffff33;
+  font-size:2vw;
+}
+
+.status,.duration,.stat-val,.dur-val{
+    text-decoration:underline;
+    font-weight:normal;
+  font-size:2.8vw;
 }
 
 .Tournament-heading{
-    display:block;
-    font-weight:bold;
-    text-decoration:underline;
     margin:0;
     padding:0;
-    cursor:pointer;
-    font-size:3.5vw;
+  font-size:3.5vw;
 }
 
 .tour{
@@ -176,20 +130,79 @@ footer{
     background:#99ff99;
 }
 
-.tour:first-child{
-    margin-top:2%;
+.logo{
+  text-align:center;
+  font-size:6vw;
+  text-shadow:0.6vw 1vw 1vw #ff0000;
+  color:#e6e600;
+  margin:3vw 0 3vw 0;
+  animation:logo_rotate 4s linear infinite;
 }
 
-.status,.duration{
-    background:#ffff33;
+@keyframes logo_rotate
+{
+  0%{transform:rotateY(0deg);}
+  12.5%{transform:rotateY(45deg);}
+  25%{transform:rotateY(90deg);}
+  37.5%{transform:rotateY(135deg);}
+  50%{transform:rotateY(180deg);}
+  62.5%{transform:rotateY(225deg);}
+  75%{transform:rotateY(270deg);}
+  87.5%{transform:rotateY(315deg);}
+  100%{transform:rotateY(360deg);}
 }
 
-.val{
-    text-decoration:underline;
-    font-weight:normal;
+.pic{
+  display:inline-block;
+  margin:2vw;
 }
 
-.Contact{
-    background:#ff99cc;
-    font-weight:bold;
+.pic-1{
+  border-radius:50%;
+  margin:0;
+  width:25vw;
+  height:25vw;
+  border:0.3vw solid black;
+  opacity:0.2;
+  transition:all 0.6s;
+}
+
+.pic-1:hover{
+  transform:rotate(360deg);
+  opacity:1;
+}
+
+
+@keyframes opacity_anim{
+  0%
+  {
+    transform:rotateZ(90deg);
+    opacity:0.6;
+  }
+  35%
+  {
+    transform:rotateZ(180deg);
+    opacity:0.7;
+  }
+  70%
+  {
+    transform:rotateZ(270deg);
+    opacity:0.8;
+  }
+  100%
+  {
+    transform:rotateZ(360deg);
+    opacity:1;
+  }
+ /* 100%
+  {
+    transform:rotateZ(0deg);
+    opacity:1;
+  }*/
+}
+
+.bottom-pic-container{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-around;
 }
