@@ -6,84 +6,83 @@
 		<meta charset="UTF-8">
         <link href="\ui\homepage\home_page.css" rel="stylesheet">
 		<script src="\ui\homepage\home_page.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<header href="#">
-		    <h2>Gamer's Adda</h2>
+		<header href="#" class="header">
+      <h2><div id="header" style="text-decoration:none;" href="#">Gamer's Adda</div></h2>
+      <p class="header-quote"><!--<span>Life</span> <span>is</span> <span>a</span> <span>game</span> <span>so</span> <span>play</span> <span>fair</span> <span>and</span> <span>you'll</span> <span>be</span> <span>rewarded</span>-->
+      Life is a game so play fair and you'll be rewarded</p>
 		</header>
-		<nav class="nav-container">
-		    <div class="navd " onclick="home()" href="">Home</div>
-		    <div class="navd " onclick="tournaments()" href="">Tournaments</div>
-		    <div class="navd " onclick="contact()" href="">Contact Us</div>
-		</nav>
-    
-    <div class="logo" id="logo">Gamer's Adda</div>
+    <nav class="menu-box" id="menu-box" >
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+    </nav>
+    <section class="menu-items" id="menu-items" >
+        <a class="navd "  href="#">Home</a>
+        <a class="navd "  href="#">About</a>
+		    <a class="navd "  href="#">Tournaments</a>
+        <a class="navd "  href="#">Gallery</a>
+        <a class="navd "  href="#">Support</a>
+    </section>
+    <!--<div class="logo" id="logo">Gamer's Adda</div>-->
     
 	<div id="Home" class="Home">
+    <section class="magnet-effect">
+      <div class="left-magnet"></div>
+      <p class="Welcome">Welcome</p>
+      <div class="right-magnet"></div>
+    </section>
 		<div class="article">
 		    
-<p>Gamer's Adda is all about digital gaming.Here,Gaming in the sense means "playing in the digital world,getting rewards of real world".Here you can participate in different online games and win real cash money.This is the place where we encourage you to show your mobile games' skills and experience to earn you rewards.</p>
-<p>So lets get started with these mobile games and make your skills and experience worthy.And please do share this with your family,friends,colleagues, and even your enemies(that will give you the chance to defeat them in this digital world, LOL ).Happy Gaming and Good Luck!</p>
+<p class="article-content">Gamer's Adda is all about digital gaming.Here,Gaming in the sense means "playing in the digital world,getting rewards of real world".Here you can participate in different online games and win real cash money.This is the place where we encourage you to show your mobile games' skills and experience to earn you rewards.</p>
+<p class="article-content">So lets get started with these mobile games and make your skills and experience worthy.And please do share this with your family,friends,colleagues, and even your enemies(that will give you the chance to defeat them in this digital world, LOL).Happy Gaming and Good Luck!</p>
 		</div>
 <!--<div style="position:relative;height:0;padding-bottom:56.25%;margin:0 1vw 0 1vw;"><iframe src="https://www.youtube.com/embed/YZe9GL3Zg_8?ecver=2?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>-->
 		<div class="inf-container">
-		    <div class="col-4 tournament-info">
+		    <div class="tournament-info">
 		    Upcoming Tournament<br/>
 		    <a style="display:block;text-align:left;text-decoration:none" href="" class="info">TBD</a>
 		    <a style="display:block;text-align:left" href="" class="info"></a>
 		    </div>
-		    <div class="col-4 tournament-info">
+		    <div class="tournament-info">
 		    Ongoing Tournament<br/>
 		    <a href="#" class="info" style="cursor:none;text-decoration:none;">Nothing</a>
 		    <br/>
 		    </div>
-		    <div class="col-4 tournament-info">
+		    <div class="tournament-info">
 		    Last Tournament<br/>
 		    <a href="#" target="_self" class="info">Ludo King</a>
 		    <br/>
 		    </div>
 		</div>
 	</div> <!--End of Class="Home"-->
-	
-	
-	
-	
-	    
-	    <div class="Tournaments" id="Tournaments" style="display:none">
-	        
-	        <div class="tour" id="T20180805001">
-	            <h4 class="Tournament-heading">Ludo King Tournament<span style="font-style:italic"></span></h4>
-	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
-	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">20/08/2018</span>
-	        </div>
-	        
-	        <div class="tour" id="T20180815001">
-	            <h4 class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(Beijing)</span></h4>
-	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
-	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">20/08/2018</span>
-	        </div>
-	        
-	        <div class="tour" id="T20180805001">
-	            <h4 class="Tournament-heading">8 Ball Pool Tournament<span style="font-style:italic">(London)</span></h4>
-	            <span class="status">Status</span> : <span class="stat-val">Completed</span>
-	            <br/>
-	            <span class="duration">Date</span> : <span class="dur-val">05/08/2018</span>
-	        </div>
-	        
-	    </div> <!--End of Tournament-->
-	    
-	    <div class="Contact" id="Contact" style="display:none">
-	        <div class="con-info">
-    	        Whatsapp - <span class="val">98310066399/8335003838</span>
-    	        <br/>
-    	        Mobile - <span class="val">9831066399</span>
-    	        <br/>
-    	        Email - <span class="val">pooladda2k18@gmail.com</span>
-    	        <br/>
-	        </div>
-	    </div> <!--End of Contact-->
+	   
+    <!--Our Games-->
+    <div class="Our-games">
+      <header class="our-games-header">
+        Our Games
+      </header>
+      <section class="games">
+        <div class="Ludo game">
+          <img src="https://ludoking.com/images/left.png" id="ludo-pic" width="300" height="200"/>
+          <div class="text-container"><span class="text">Ludo King</span></div>
+        </div>  <!--End of Ludo-->
+        
+        <section class="eight-ball-pool game">
+          <img src="https://beta.gamingmonk.com/uploads/game/cover_pic/pool-detail.jpg" id="pool-pic" width="300" height="200"/>
+          <div class="text-container"><span class="text">8 Ball Pool</span></div>
+        </section>  <!--End of 8-ball-pool-->
+        
+        <div class="Pubg game">
+          <img src="https://www.trueachievements.com/customimages/076860.jpg" id="pubg-pic" width="300vw" height="200vw" />
+          <div class="text-container"><span class="text">PUBG</span></div>
+        </div>  <!--End of PUBG-->
+        
+      </section><!--End of Games-->
+    </div>
+    
     <div class="bottom-pic-container" id="pic-container">
 	    <div class="pic">
         <img class="pic-1" src="https://america.cgtn.com/wp-content/uploads/2018/02/Mobile-gaming-revenue-takes-over-PC-and-console-games-.jpg" width="150vw" height="150vw" alt="Mobile Gaming"/>
@@ -95,8 +94,17 @@
       <img class="pic-1" src="https://futhead.cursecdn.com/static/uploads/news/WT_Revamp.jpg" width="150vw" height="150vw" alt="Fifa Mobile"/>
     </div>
   </div> <!--Bottom pics container-->
-		<footer>
-		    <span class="copyrights">&copy;Gamer's Adda</span>
+		<div class="Contact" id="Contact" >
+	        <div class="con-info">
+    	        Whatsapp - <span class="val">98310066399/8335003838</span>
+    	        <br/>
+    	        Mobile - <span class="val">9831066399</span>
+    	        <br/>
+    	        Email - <span class="val">gamers.adda.2k18@gmail.com</span>
+    	        <br/>
+	        </div>
+	    </div> <!--End of Contact-->
+    <footer>
+		    <span class="copyrights">2018&copy;Gamer's Adda</span>
 		</footer>
 	</body>
-</html>

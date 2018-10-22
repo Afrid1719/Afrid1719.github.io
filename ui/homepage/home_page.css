@@ -3,18 +3,48 @@
 }
 
 html,body{
-  background:#000099;
-  background-image:linear-gradient(to left top,#4d88ff,#00ccff);
   padding:0;
   margin:0;
+  overflow-x : hidden;
 }
 
-header{
+.header{
     cursor:pointer;
-    font-size:7vw;
-    background:#ffdb4d;
-  background-image:linear-gradient(to bottom right,#00cc99,#00ff00,#ccff33,#f2f2f2,#ff9900,#ffcc00);
+  font-family : verdana;
+    font-size:6vw;
+  background-image:url('https://assets.pcmag.com/media/images/584117-6-reasons-why-pc-gaming-is-better-than-console-gaming.jpg?thumb=y&width=810&height=456');
+  background-repeat : no-repeat;
+  background-attachment : scroll;
+  background-size : 100%;
+  padding : 20vw 10vw;
+  background-origin : 50% 50%;
     margin:0 0 1vw 0;
+  transition : all 0.2s;
+}
+
+.menu-box{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-around;
+    align-items:center;
+    position:absolute ;
+    top:3vw;
+    right:4vw;
+    padding:0;
+    margin:0;
+}
+
+.rect{
+  background-color : #ff3333;
+  width : 5vw;
+  height : 1vw;
+}
+
+.rect:nth-child(2){
+  margin : 0.3vw 0 0.3vw 0;
+}
+.rect:hover{
+  cursor : pointer;
 }
 
 
@@ -22,70 +52,242 @@ h2{
     margin:0;
     padding:0;
     text-align:center;
-    color:black;
+    color: #ff0000;
+  letter-spacing : 0.2vw;
 }
 
-h2:hover{
-  color:#404040;
-}
-
-.nav-container{
-  display:flex;
-  flex-flow:column nowrap;
+.header-quote{
+  font-size :3vw;
+  margin : 0;
   padding : 0;
-  margin: 0.5vw;
+  color : #0033cc;
+  text-align : center;
+  font-weight : normal;
+  transition : all 0.3s;
+}
+
+.header-quote:hover{
+  background : white;
+}
+
+.menu-items{
+  display : flex;
+  flex-flow:column nowrap;
+  justify-content : space-around;
+  background-color : #00ccff;
+  position : absolute;
+  top : 10vw;
+  right : -10%;
+ transform : translateX(-50%); 
+  padding : 0;
+  margin: 0;
+  transition : all 2s;
 }
 
 .navd{
     cursor:pointer;
-    display:block;
+    display:inline-block;
     height:auto;
-    background-color:#99bbff;
-    color:black;
+    background-color:transparent;
+    color: white;
     font-weight:bolder;
-    padding:1% 2% 1% 2%;
-    font-size:4vw;
-    border-radius:3vw;
-    /*float:left;*/
+  font-size : 3vw;
+  text-decoration:none;
+  padding : 1.5vw;
+  text-shadow : 0 0 1.5vw black;
+  border : 0.6vw solid transparent;
 }
-.navd:nth-child(1){
-  margin:0.5vw 0 0 0;
-}
-.navd:nth-child(2){
-    margin:0.5vw 0 0.5vw 0;
-}
-.navd:nth-child(3){
-  margin:0 0 0.5vw 0;
-}
+
 .navd:hover{
-    background-color:#1a66ff;
+    border : 0.6vw solid #008ae6;
+    animation : border-anim 0.6s ease;
+    /*animation-iteration-count : infinite;*/
+    animation-fill-mode : forwards;
+}
+
+@keyframes border-anim{
+  from{
+    border-radius : 0;
+  }
+  to{
+    border-radius : 3vw;
+  }
+}
+
+.Welcome{
+  text-align : center;
+  font-size : 5vw;
+  font-weight : bold;
+  color : #ff6699;
+  /*border-left : 2px solid black;
+  border-right : 2px solid black;*/
+  animation : widening 3s linear infinite alternate;
+}
+
+.magnet-effect{
+  display : flex;
+  flex-flow : row nowrap;
+  justify-content : space-between;
+  margin-top : 5vw;
+  margin-bottom : 5vw;
+}
+
+.left-magnet{
+  border-right : 2vw solid #3d5c5c;
+  animation : left-magnet-anim 3s linear infinite alternate;
+  background : red;
+}
+
+.right-magnet{
+  border-left : 2vw solid #3d5c5c;
+  animation : right-magnet-anim 3s linear infinite alternate;
+  background : red;
+}
+
+.left-magnet,.right-magnet,.Welcome{
+  display:inline-block;
+  width : 33vw;
+  height : 6vw;
+  line-height : 6vw;
+  padding:0;
+  margin:0;
+  transition : all 0.6s;
+}
+
+
+@keyframes left-magnet-anim{
+  0%{
+    transform : translateX(0%);
+  }
+  10%{
+    transform : translateX(-10%);
+  }
+  20%{
+    transform : translateX(-20%);
+  }
+  30%{
+    transform : translateX(-30%);
+  }
+  40%{
+    transform : translateX(-40%);
+  }
+  50%{
+    transform : translateX(-50%);
+  }
+  60%{
+    transform : translateX(-60%);
+  }
+  70%{
+    transform : translateX(-70%);
+  }
+  80%{
+    transform : translateX(-80%);
+  }
+  90%{
+    transform : translateX(-90%);
+  }
+  100%{
+    transform : translateX(-95%);
+  }
+}
+
+@keyframes right-magnet-anim{
+  0%{
+    transform : translateX(0%);
+  }
+  10%{
+    transform : translateX(10%);
+  }
+  20%{
+    transform : translateX(20%);
+  }
+  30%{
+    transform : translateX(30%);
+  }
+  40%{
+    transform : translateX(40%);
+  }
+  50%{
+    transform : translateX(50%);
+  }
+  60%{
+    transform : translateX(60%);
+  }
+  70%{
+    transform : translateX(70%);
+  }
+  80%{
+    transform : translateX(80%);
+  }
+  90%{
+    transform : translateX(90%);
+  }
+  100%{
+    transform : translateX(95%);
+  }
+}
+
+@keyframes widening{
+  0%{}
+  10%{letter-spacing : 0.2vw;}
+  20%{letter-spacing : 0.4vw; color : #ff6699;}
+  30%{letter-spacing : 0.6vw;}
+  40%{letter-spacing : 0.8vw; color : #ff66cc;}
+  50%{letter-spacing : 1vw;}
+  60%{letter-spacing : 1.2vw; color : #ff66ff;}
+  70%{letter-spacing : 1.4vw;}
+  80%{letter-spacing : 1.6vw; color : #cc66ff;}
+  90%{letter-spacing : 1.8vw;}
+  100%{letter-spacing : 2vw; color : #9999ff;}
 }
 
 .article{
-    background:#99ebff;
-    font-size:3vw;
-    margin:10vw 0.6vw 3vw 0.6vw;
+    background : rgba(0,0,0,0.08);
+    color : #1a1a1a;
+    font-size:4vw;
+    padding: 10vw;
+    margin-top : 3vw;
+    margin-bottom : 3vw;
 }
 
-.article,.tournament-info,.tour,.Contact{
+.article-content{
+  padding : 2vw;
+  margin : 0;
+  border-left : 0.8vw double red;
+  border-right : 0.8vw double red;
+}
+
+.inf-container{
+  display : grid;
+  grid-template-columns : 100%;
+  grid-template-rows : auto auto auto;
+  grid-row-gap : 2vw;
+  background-color : rgba(0,0,0,0.08);
+  padding : 3vw;
+  margin-top : 10vw;
+  margin-bottom : 10vw;
+}
+
+.tournament-info,.tour,.Contact{
     padding:1.5vw;
     border:1px solid transparent;
     border-radius:1vw;
     font-family:"Times New Roman";
     box-shadow:0 0 3px #999999;
-  margin:1vw 0.6vw 1vw 0.6vw;
+    margin:1vw 0.6vw 1vw 0.6vw;
 }
 
 .tournament-info{
-    background:#ffe680;
+    background:#ccebff;
     font-weight:bolder;
     border-radius:1.4vw;
-  font-size:3vw;
+    font-size:4vw;
+    
 }
 
-.tournament-info:nth-child(2){
+/*.tournament-info:nth-child(2){
     margin:1vw 0.6vw 1vw 0.6vw; 
-}
+}*/
 footer{
   position:relative;
     background:#ff7733;
@@ -105,6 +307,7 @@ footer{
     background:#ff99cc;
     font-weight:bold;
   font-size:3.5vw;
+  margin:0;
 }
 
 .status,.duration{
@@ -133,23 +336,23 @@ footer{
 .logo{
   text-align:center;
   font-size:6vw;
-  text-shadow:0.6vw 1vw 1vw #ff0000;
-  color:#e6e600;
+  text-shadow:0.6vw 1vw 1vw #ffffe6;
+  color:#00b359;
   margin:3vw 0 3vw 0;
   animation:logo_rotate 4s linear infinite;
 }
 
 @keyframes logo_rotate
 {
-  0%{transform:rotateY(0deg);}
-  12.5%{transform:rotateY(45deg);}
-  25%{transform:rotateY(90deg);}
-  37.5%{transform:rotateY(135deg);}
-  50%{transform:rotateY(180deg);}
-  62.5%{transform:rotateY(225deg);}
-  75%{transform:rotateY(270deg);}
-  87.5%{transform:rotateY(315deg);}
-  100%{transform:rotateY(360deg);}
+  0%{transform:translateX(0%) rotateY(0deg);}
+  12.5%{transform:translateX(-3%) rotateY(45deg);}
+  25%{transform:translateX(-6%), rotateY(90deg);}
+  37.5%{transform:translateX(-9%) rotateY(135deg);}
+  50%{transform:translateX(0%) rotateY(180deg);}
+  62.5%{transform:translateX(9%) rotateY(225deg);}
+  75%{transform:translateX(6%) rotateY(270deg);}
+  87.5%{transform:translateX(3%) rotateY(315deg);}
+  100%{transform:translateX(0%) rotateY(360deg);}
 }
 
 .pic{
@@ -167,9 +370,77 @@ footer{
   transition:all 0.6s;
 }
 
+.Our-games{
+  width : 100%;
+  height : auto;
+  margin-top : 6vw;
+  margin-bottom : 6vw;
+}
+
+.our-games-header{
+  color : #ff3300;
+  text-align : center;
+  font-size : 7vw;
+  font-weight : 700;
+  margin : 5vw;
+  padding : 2vw;
+  border-top : 0.2vw solid #262626;
+  
+}
+
+.games{
+  display : grid;
+  width : 100%;
+  height : auto;
+  grid-template-columns : auto;
+  justify-content : space-around;
+  grid-row-gap : 2vw;
+  padding : 5vw;
+  background : rgba(0,0,0,0.08);
+}
+
+.Ludo, .eight-ball-pool, .Pubg{
+  position : relative;
+}
+
+.text-container{
+  display : none;
+  position : absolute;
+  top : 0;
+  width : 100%;
+  height : 100%;
+  color : white;
+  transform : translate(50%,-50%) rotate(90deg);
+  background-color : rgba(0,0,0,0.4);
+  transition : all 0.4s ease;
+}
+
+.text{
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  font-weight : bold;
+}
+
+#ludo-pic, #pool-pic, #pubg-pic{
+  display : block;
+}
+
+.game:hover .text-container{
+  display : block;
+  transform : translate(0,0);
+}
+
+@keyframes games_anim{
+  from{
+    
+  }
+}
+
 .pic-1:hover{
-  transform:rotate(360deg);
-  opacity:1;
+  transform : rotate(360deg);
+  opacity : 1;
 }
 
 
@@ -206,3 +477,4 @@ footer{
   flex-flow:row nowrap;
   justify-content:space-around;
 }
+

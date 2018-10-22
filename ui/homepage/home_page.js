@@ -1,23 +1,14 @@
-function home()
-{
-    document.getElementById("Tournaments").style.display='none';
-    document.getElementById("Contact").style.display='none';
-    document.getElementById("Home").style.display='block';
-    document.getElementById("pic-container").style.display='flex';
-}
-
-function tournaments()
-{
-    document.getElementById("Contact").style.display='none';
-    document.getElementById("Home").style.display='none';
-    document.getElementById("pic-container").style.display='none';
-    document.getElementById("Tournaments").style.display='block';
-}
-
-function contact()
-{
-    document.getElementById("Home").style.display='none';
-    document.getElementById("pic-container").style.display='none';
-    document.getElementById("Tournaments").style.display='none';
-    document.getElementById("Contact").style.display='block';
-}
+var count = false;
+$(".menu-items").hide();
+$("#menu-box").click(function(){
+  $(".menu-items").toggle(50);
+  if(count === false){
+    count = true;
+    $(".header").css("opacity","0.55"); 
+  }
+  else
+    {
+      count = false;
+      $("header").css("opacity","1");
+    }
+});
